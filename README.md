@@ -28,7 +28,7 @@ o	Data with unpredictable or changing access patterns (e.g., user-generated cont
 o	Long-lived, less frequently accessed data (e.g., backups, disaster recovery files).
 4.	**S3 One Zone-IA**
 o	Infrequently accessed, non-critical data (e.g., secondary backups, easily recreatable data).
-5.	S3 Glacier**
+5.	**S3 Glacier**
 o	Long-term archival with rare retrievals (e.g., compliance archives, medical records, financial logs).
 6.	**S3 Glacier Deep Archive**
 o	Rarely accessed data with long-term retention (e.g., regulatory archives, 7+ year compliance storage)
