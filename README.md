@@ -12,7 +12,6 @@ s3
 | Minimum storage duration charge    | N/A          | 30 days                | 30 days          | 30 days          | 180 days         |
 | Retrieval Fees                     | N/A          | N/A                    | per GB retrieved | per GB retrieved | per GB retrieved |
 | First byte latency                 | milliseconds | milliseconds           | milliseconds     | milliseconds     | Minutes to Hours |
-
 | Storage class                                 | Designed for                                                                                                           | Bucket type                  | Availability Zones | Min storage duration | Min billable object size | Monitoring and auto-tiering fees            | Retrieval fees    |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------ | -------------------- | ------------------------ | ------------------------------------------- | ----------------- |
 | Standard                                      | Frequently accessed data (more than once a month) with milliseconds access                                             | General purpose              | ≥ 3                | \-                   | \-                       | \-                                          | \-                |
@@ -23,7 +22,6 @@ s3
 | Glacier Flexible Retrieval (formerly Glacier) | Long-lived archive data accessed once a year with retrieval of minutes to hours                                        | General purpose              | ≥ 3                | 90 days              | \-                       | \-                                          | Per-GB fees apply |
 | Glacier Deep Archive                          | Long-lived archive data accessed less than once a year with retrieval of hours                                         | General purpose              | ≥ 3                | 180 days             | \-                       | \-                                          | Per-GB fees apply |
 | Reduced redundancy                            | Noncritical, frequently accessed data with milliseconds access (not recommended as S3 Standard is more cost effective) | General purpose              | ≥ 3                | \-                   | \-                       | \-                                          | Per-GB fees apply |
-
 Understanding AWS S3 Storage Classes
 **AWS Glacier:** This storage class is ideal for long-term archival data. Objects in Glacier must be retained for a minimum of 90 days. After 90 days, you can retrieve the data, but keep in mind the costs associated with retrievals and the time it takes.
 
