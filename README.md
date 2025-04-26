@@ -24,7 +24,7 @@ Amazon S3 Storage Classes – Use Cases
 o	Frequently accessed data (e.g., live websites, dynamic content, big data analytics).
 2.	**S3 Intelligent-Tiering**
 o	Data with unpredictable or changing access patterns (e.g., user-generated content, analytics datasets).
-3.	**S3 Standard-IA (Infrequent Access) **
+3.	**S3 Standard-IA (Infrequent Access)**
 o	Long-lived, less frequently accessed data (e.g., backups, disaster recovery files).
 4.	**S3 One Zone-IA**
 o	Infrequently accessed, non-critical data (e.g., secondary backups, easily recreatable data).
