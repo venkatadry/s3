@@ -21,7 +21,7 @@ Understanding AWS S3 Storage Classes
 Amazon S3 Storage Classes – Use Cases
 Amazon S3 Storage Classes – Use Cases
 1.	**S3 Standard**
-o	Frequently accessed data (e.g., live websites, dynamic content, big data analytics).
+:Frequently accessed data (e.g., live websites, dynamic content, big data analytics).
 2.	**S3 Intelligent-Tiering**
 o	Data with unpredictable or changing access patterns (e.g., user-generated content, analytics datasets).
 3.	**S3 Standard-IA (Infrequent Access)**
