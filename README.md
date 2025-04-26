@@ -20,18 +20,23 @@ Understanding AWS S3 Storage Classes
 
 Amazon S3 Storage Classes – Use Cases
 Amazon S3 Storage Classes – Use Cases
-1.	**S3 Standard**
-:Frequently accessed data (e.g., live websites, dynamic content, big data analytics).
-2.	**S3 Intelligent-Tiering**
-o	Data with unpredictable or changing access patterns (e.g., user-generated content, analytics datasets).
-3.	**S3 Standard-IA (Infrequent Access)**
-o	Long-lived, less frequently accessed data (e.g., backups, disaster recovery files).
-4.	**S3 One Zone-IA**
-o	Infrequently accessed, non-critical data (e.g., secondary backups, easily recreatable data).
-5.	**S3 Glacier**
-o	Long-term archival with rare retrievals (e.g., compliance archives, medical records, financial logs).
-6.	**S3 Glacier Deep Archive**
-o	Rarely accessed data with long-term retention (e.g., regulatory archives, 7+ year compliance storage)
+1. **S3 Standard**  
+   Frequently accessed data (e.g., live websites, dynamic content, big data analytics).
+
+2. **S3 Intelligent-Tiering**  
+   Data with unpredictable or changing access patterns (e.g., user-generated content, analytics datasets).
+
+3. **S3 Standard-IA (Infrequent Access)**  
+   Long-lived, less frequently accessed data (e.g., backups, disaster recovery files).
+
+4. **S3 One Zone-IA**  
+   Infrequently accessed, non-critical data (e.g., secondary backups, easily recreatable data).
+
+5. **S3 Glacier**  
+   Long-term archival with rare retrievals (e.g., compliance archives, medical records, financial logs).
+
+6. **S3 Glacier Deep Archive**  
+   Rarely accessed data with long-term retention (e.g., regulatory archives, 7+ year compliance storage).
 
 **Performance:** Standard > Intelligent-Tiering > Standard-IA > One Zone-IA > Glacier > Deep Archive.
 **Cost:** Deep Archive < Glacier < One Zone-IA < Standard-IA < Intelligent-Tiering < Standard.
