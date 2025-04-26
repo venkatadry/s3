@@ -12,4 +12,3 @@ s3
 | Minimum storage duration charge    | N/A          | 30 days                | 30 days          | 30 days          | 180 days         |
 | Retrieval Fees                     | N/A          | N/A                    | per GB retrieved | per GB retrieved | per GB retrieved |
 | First byte latency                 | milliseconds | milliseconds           | milliseconds     | milliseconds     | Minutes to Hours |
-📋
