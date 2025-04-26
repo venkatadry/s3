@@ -12,16 +12,7 @@ s3
 | Minimum storage duration charge    | N/A          | 30 days                | 30 days          | 30 days          | 180 days         |
 | Retrieval Fees                     | N/A          | N/A                    | per GB retrieved | per GB retrieved | per GB retrieved |
 | First byte latency                 | milliseconds | milliseconds           | milliseconds     | milliseconds     | Minutes to Hours |
-| Storage class                                 | Designed for                                                                                                           | Bucket type                  | Availability Zones | Min storage duration | Min billable object size | Monitoring and auto-tiering fees            | Retrieval fees    |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------ | -------------------- | ------------------------ | ------------------------------------------- | ----------------- |
-| Standard                                      | Frequently accessed data (more than once a month) with milliseconds access                                             | General purpose              | ≥ 3                | \-                   | \-                       | \-                                          | \-                |
-| Intelligent-Tiering                           | Data with changing or unknown access patterns                                                                          | General purpose              | ≥ 3                | \-                   | \-                       | Per-object fees apply for objects >= 128 KB | \-                |
-| Standard-IA                                   | Infrequently accessed data (once a month) with milliseconds access                                                     | General purpose              | ≥ 3                | 30 days              | 128 KB                   | \-                                          | Per-GB fees apply |
-| One Zone-IA                                   | Recreatable, infrequently accessed data (once a month) with milliseconds access                                        | General purpose or directory | 1                  | 30 days              | 128 KB                   | \-                                          | Per-GB fees apply |
-| Glacier Instant Retrieval                     | Long-lived archive data accessed once a quarter with instant retrieval in milliseconds                                 | General purpose              | ≥ 3                | 90 days              | 128 KB                   | \-                                          | Per-GB fees apply |
-| Glacier Flexible Retrieval (formerly Glacier) | Long-lived archive data accessed once a year with retrieval of minutes to hours                                        | General purpose              | ≥ 3                | 90 days              | \-                       | \-                                          | Per-GB fees apply |
-| Glacier Deep Archive                          | Long-lived archive data accessed less than once a year with retrieval of hours                                         | General purpose              | ≥ 3                | 180 days             | \-                       | \-                                          | Per-GB fees apply |
-| Reduced redundancy                            | Noncritical, frequently accessed data with milliseconds access (not recommended as S3 Standard is more cost effective) | General purpose              | ≥ 3                | \-                   | \-                       | \-                                          | Per-GB fees apply |
+
 Understanding AWS S3 Storage Classes
 **AWS Glacier:** This storage class is ideal for long-term archival data. Objects in Glacier must be retained for a minimum of 90 days. After 90 days, you can retrieve the data, but keep in mind the costs associated with retrievals and the time it takes.
 
@@ -50,4 +41,3 @@ Amazon S3 Storage Classes – Use Cases
 **Performance:** Standard > Intelligent-Tiering > Standard-IA > One Zone-IA > Glacier > Deep Archive  
 **Cost:** Deep Archive < Glacier < One Zone-IA < Standard-IA < Intelligent-Tiering < Standard  
 **Choose based on:** Access frequency, retrieval time needs, and durability requirements
-
