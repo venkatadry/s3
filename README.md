@@ -38,6 +38,7 @@ Amazon S3 Storage Classes – Use Cases
 6. **S3 Glacier Deep Archive**  
    Rarely accessed data with long-term retention (e.g., regulatory archives, 7+ year compliance storage).
 
-**Performance:** Standard > Intelligent-Tiering > Standard-IA > One Zone-IA > Glacier > Deep Archive.
-**Cost:** Deep Archive < Glacier < One Zone-IA < Standard-IA < Intelligent-Tiering < Standard.
-**Choose based on:** Access frequency, retrieval time needs, and durability requirements.
+**Performance:** Standard > Intelligent-Tiering > Standard-IA > One Zone-IA > Glacier > Deep Archive  
+**Cost:** Deep Archive < Glacier < One Zone-IA < Standard-IA < Intelligent-Tiering < Standard  
+**Choose based on:** Access frequency, retrieval time needs, and durability requirements
+
