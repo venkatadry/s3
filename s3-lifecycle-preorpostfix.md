@@ -1,5 +1,10 @@
 
 https://stackoverflow.com/questions/28437887/s3-lifecycle-rule-with-suffix
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-lifecycle.html
+
+
 I have a bunch of files in an S3 bucket. I'd like to create a rule to delete all of the files that end in .pdf after 1 day.
 
 Can I do this with S3 lifecycle rules?
