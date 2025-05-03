@@ -1,3 +1,13 @@
+S3 lifecycle rules only support prefixes, not suffixes like .txt. So you cannot directly target .txt files using lifecycle rules unless those files share a common prefix in their names or folder paths.
+S3 prefix only matches the beginning of object keys, not the end (like .txt). So you can't use .txt as a prefix to target all text files
+S3 doesn't support wildcards like * in prefixes
+Then setting the prefix as "dependency" in your lifecycle rule is absolutely correct. It will match:
+dependency_links.txt
+dependencyXYZ.csv
+dependency/anything.txt
+
+
+
 1.user test-user with policy
 ```{
     "Version": "2012-10-17",
