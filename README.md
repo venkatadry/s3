@@ -53,3 +53,5 @@ Amazon S3 Storage Classes – Use Cases
 **Cost:** Deep Archive < Glacier < One Zone-IA < Standard-IA < Intelligent-Tiering < Standard  
 **Choose based on:** Access frequency, retrieval time needs, and durability requirements
 
+**you cannot move to upper storage class from lower. ie glacier to standard .but you can use Inteligent tiering***
+
