@@ -34,9 +34,51 @@ Create Route table for private & Public
 Create S3 Bucket policy and attach IAM role to EC2
 Create EC2 End point for private subnet
 
+IGW
+![image](https://github.com/user-attachments/assets/5ce36e18-485e-4d38-b81d-01c76c25c07b)
+
+
+public rt
+
+![image](https://github.com/user-attachments/assets/3dbeded2-bde8-45a7-a17c-7e79eb06c011)
+
+public-sg
+![image](https://github.com/user-attachments/assets/7cfd263c-35ad-49ee-9108-45006db6212c)
+
+
+private-rt
+![image](https://github.com/user-attachments/assets/3088d354-d2db-4add-b175-e6e148ae9e09)
+
+private-sg
+![image](https://github.com/user-attachments/assets/4831be9d-7032-4698-bf07-320f30f997fe)
+
+From public ec2 able to login ro private ec2
+
+```[ec2-user@ip-10-0-1-67 ~]$ hostname
+ip-10-0-1-67.ec2.internal
+[ec2-user@ip-10-0-1-67 ~]$
+[ec2-user@ip-10-0-1-67 ~]$
+[ec2-user@ip-10-0-1-67 ~]$ ssh -i "ec2-pem.pem" ec2-user@10.0.0.33
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Tue May 27 04:07:39 2025 from 10.0.1.67
+[ec2-user@ip-10-0-0-33 ~]$ ```
+
+
+
 **we attach IGW to vpc .The route tables make it effect**
 
 Connect to ec2 in provate subnet https://medium.com/@amitmavgupta/aws-accessing-an-ec2-instance-in-a-private-subnet-using-endpoints-787891e6e788
 
 https://medium.com/@hobballah.yasser/secure-access-to-private-ec2-instance-in-private-subnet-methods-and-best-practices-d4ee75a506d3#7809
+
+
 
